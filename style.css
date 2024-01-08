@@ -1,0 +1,160 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* HEADER */
+
+.header {
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__menu {
+    /* display: flex; */
+    gap: 1%;
+}
+
+.header__menu a {
+    text-decoration: none;
+    color: gray;
+}
+
+.header__menu a:not(:last-child) {
+    border-right: 1px solid gray;
+    padding-right: 1%;
+}
+
+/* MAIN CONTAINER */
+
+@media screen and (max-width: 499px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .viaje-container {
+        display: flex;
+        flex-direction: column;
+        gap: 3%;
+    }
+
+    .viaje {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .viaje__elem1,
+    .viaje__elem2 {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+
+.viaje-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.viaje-container__title {
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    font-weight: normal;
+    color: gray;
+}
+
+.viaje {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+
+.viaje__img {
+    width: 100%;
+    height: 40%;
+}
+
+.viaje__elem1,
+.viaje__elem2 {
+    border: 1px solid gray;
+    height: 430px;
+    width: 49%;
+}
+
+.viaje__info {
+    padding: 3%;
+}
+
+.viaje__place {
+    text-decoration: none;
+    color: gray;
+    font-weight: normal;
+}
+
+.viaje__place:hover {
+    color: #67B500;
+    cursor: pointer;
+}
+
+.viaje__reservation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.viaje__price {
+    text-decoration: none;
+    color: gray;
+    font-size: small;
+}
+
+.viaje__price--big {
+    color: #5DA132;
+    font-size: x-large;
+}
+
+.viaje__button--white {
+    text-transform: uppercase;
+    color: #5DA132;
+    border: none;
+    border-radius: 5%;
+    font-weight: bold;
+}
+
+.viaje__button--white:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #67B500;
+    border: none;
+    border-radius: 5%;
+    font-weight: bold;
+}
+
+.viaje__button--green {
+    text-transform: uppercase;
+    color: white;
+    background-color: #67B500;
+    border: none;
+    border-radius: 5%;
+    font-weight: bold;
+}
+
+.viaje__button--green:hover {
+    cursor: pointer;
+    color: #67B500;
+    background-color: white;
+    border: none;
+    border-radius: 5%;
+    font-weight: bold;
+}
