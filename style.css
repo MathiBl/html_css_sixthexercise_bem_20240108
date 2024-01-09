@@ -32,39 +32,24 @@ body {
 
 /* MAIN CONTAINER */
 
-@media screen and (max-width: 499px) {
-    .main-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .viaje-container {
-        display: flex;
-        flex-direction: column;
-        gap: 3%;
-    }
-
-    .viaje {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .viaje__elem1,
-    .viaje__elem2 {
-        display: flex;
-        flex-direction: row;
-    }
-}
-
 .main-container {
     display: flex;
     flex-direction: row;
-    gap: 3%;
+    width: 100%;
+    gap: 2%;
+    flex-wrap: wrap;
 }
 
 .viaje-container {
     display: flex;
     flex-direction: column;
+    width: 49%;
+}
+
+.viaje-container--lower-width {
+    display: flex;
+    flex-direction: column;
+    width: 23.5%;
 }
 
 .viaje-container__title {
@@ -77,7 +62,7 @@ body {
 .viaje {
     display: flex;
     flex-direction: row;
-    gap: 3%;
+    gap: 4%;
 }
 
 .viaje__img {
@@ -86,10 +71,16 @@ body {
 }
 
 .viaje__elem1,
-.viaje__elem2 {
+.viaje__elem2,
+.viaje__elem3,
+.viaje__elem4 {
     border: 1px solid gray;
     height: 430px;
     width: 49%;
+}
+
+.viaje__elem1--lower-width {
+    width: 100%;
 }
 
 .viaje__info {
@@ -122,6 +113,11 @@ body {
 .viaje__price--big {
     color: #5DA132;
     font-size: x-large;
+}
+
+.viaje__price--big:hover {
+    cursor: pointer;
+    color: #67B500;
 }
 
 .viaje__button--white {
@@ -157,4 +153,22 @@ body {
     border: none;
     border-radius: 5%;
     font-weight: bold;
+}
+
+.viaje-container--higher-width {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.viaje--gap-modified {
+    gap: 2%;
+}
+
+@media screen and (max-width: 499px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }  
 }
