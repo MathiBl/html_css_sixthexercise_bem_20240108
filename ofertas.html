@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ofertas</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -16,48 +24,108 @@
         />
       </div>
       <div class="header__menu">
-        <a href="">Agencias</a>
-        <a href="">Preguntas frecuentes</a>
-        <a href="">Identifícate</a>
-        <a href="">911 22 00 44</a>
+        <a href="">
+          <span class="material-symbols-outlined"> location_on </span
+          >Agencias</a
+        >
+        <a href="">
+          <span class="material-symbols-outlined"> info </span>Preguntas
+          frecuentes</a
+        >
+        <a href="">
+          <span class="material-symbols-outlined"> person </span>Identifícate</a
+        >
+        <a href="">
+          <span class="material-symbols-outlined"> call </span>911 22 00 44</a
+        >
       </div>
     </header>
     <div class="main-container">
-      <div class="viaje-container">
-        <h2 class="viaje-container__title">Ideas para el 2024</h2>
+      <div class="navbar">
+        <div class="navbar__menu">
+        <ul class="navbar--border-top">
+          <a href=""
+            ><li class="navbar__elem1 navbar__elem1--green">
+              Menú <span class="material-symbols-outlined">menu</span>
+            </li></a
+          >
+          <li><a href="">Multidestino</a></li>
+          <li><a href="">Vuelo+Hotel</a></li>
+          <li><a href="">Circuitos</a></li>
+          <li><a href="">Cruceros</a></li>
+          <li><a href="">Ofertas</a></li>
+          <li><a href="">Disney</a></li>
+          <li><a href="">Portaventura</a></li>
+          <li><a href="">Caribe</a></li>
+          <li><a href="">Hoteles</a></li>
+          <li><a href="">Vuelos</a></li>
+          <li><a href="">Trenes</a></li>
+        </ul>
+      </div>
+      <div class="navbar__item-selected navbar__item-selected--without-space">
+        <ul>
+          <li class="navbar__item-selected--green">Inicio &nbsp;</li>
+          <li class="navbar__item-selected--gray">> Ofertas</li>
+        </ul>
+
+      </div>
+      </div>
+
+
+
+      <div class="navbar-filters">
+        <ul>
+          <li><a href="">Zona<span class="material-symbols-outlined">expand_more</span></a></li>
+          <li><a href="">Duración<span class="material-symbols-outlined">expand_more</span></a></li>
+          <li><a href="">Régimen alimenticio<span class="material-symbols-outlined">expand_more</span></a></li>
+          <li><a href="">Experiencia<span class="material-symbols-outlined">expand_more</span></a></li>
+          <li><a href="">Viajero<span class="material-symbols-outlined">expand_more</span></a></li>
+          <li><a href="">Tipo viaje<span class="material-symbols-outlined">expand_more</span></a></li>
+          <li><a href="">Precios<span class="material-symbols-outlined">expand_more</span></a></li>
+          
+        </ul>
+      </div>
+
+      <div class="viaje-container viaje-container--higher-width">
+        <h2 class="viaje-container__title viaje-container__title--center">Ofertas Última Hora</h2>
         <div class="viaje">
           <div class="viaje__elem1">
-            <img class="viaje__img" src="china.jpg" alt="bellezas_de_china" />
+            <div class="viaje__img">
+              <img src="tailandia.jpg" alt="tailandia" />
+              <button class="viaje__button viaje__button--info">
+                <a class="viaje__price viaje__price--modified" href=""
+                >desde <br />
+                <span class="viaje__price viaje__price--black">1.850€</span></a
+              >
+                <span class="material-symbols-outlined material-symbols-outlined--hover">
+                  info
+                  </span>
+              </button>
+            </div>
             <div class="viaje__info">
-              <a class="viaje__place" href=""><h3>Bellezas de China</h3></a>
-              <p class="viaje__description">
-                Una cultura milenaria y paisajes de ensueño es lo que
-                encontrarás en China en un viaje sorprendente y
-                espectacularmente único. Además, ¡ya no es necesario el visado
-                para entrar!
-              </p>
-              <div class="viaje__reservation">
-                <a class="viaje__price" href=""
-                  >desde <br />
-                  <span class="viaje__price viaje__price--big">1.955€</span></a
-                >
-                <button class="viaje__button viaje__button--white">
-                  Más info
-                </button>
+              <div class="viaje__info-sub-container">
+                <a class="viaje__place" href=""><h3>Oferta Tailandia</h3></a>
               </div>
+                
+                
+            
             </div>
           </div>
           <div class="viaje__elem2">
-            <img class="viaje__img" src="riviera_maya.jpg" alt="riviera_maya" />
+            <div class="viaje__img">
+              <img src="riviera_maya.jpg" alt="riviera_maya" />
+            </div>
             <div class="viaje__info">
-              <a class="viaje__place" href=""
-                ><h3>Disfruta en Riviera Maya</h3></a
-              >
-              <p class="viaje__description">
-                Riviera Maya se sitúa en el caribe mexicano, un lugar ideal para
-                sus vacaciones, gracias a su temperatura tropical, sus aguas
-                color turquesa y sus playas de arena blanca.
-              </p>
+              <div class="viaje__info-sub-container">
+                <a class="viaje__place" href=""
+                  ><h3>Disfruta en Riviera Maya</h3></a
+                >
+                <p class="viaje__description">
+                  Riviera Maya se sitúa en el caribe mexicano, un lugar ideal
+                  para sus vacaciones, gracias a su temperatura tropical, sus
+                  aguas color turquesa y sus playas de arena blanca.
+                </p>
+              </div>
               <div class="viaje__reservation">
                 <a class="viaje__price" href=""
                   >desde <br />
@@ -65,6 +133,120 @@
                 >
                 <button class="viaje__button viaje__button--white">
                   Más info
+                  <span class="material-symbols-outlined"> navigate_next </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="viaje__elem3">
+            <div class="viaje__img">
+              <img src="riviera_maya.jpg" alt="riviera_maya" />
+            </div>
+            <div class="viaje__info">
+              <div class="viaje__info-sub-container">
+                <a class="viaje__place" href=""
+                  ><h3>Disfruta en Riviera Maya</h3></a
+                >
+                <p class="viaje__description">
+                  Riviera Maya se sitúa en el caribe mexicano, un lugar ideal
+                  para sus vacaciones, gracias a su temperatura tropical, sus
+                  aguas color turquesa y sus playas de arena blanca.
+                </p>
+              </div>
+              <div class="viaje__reservation">
+                <a class="viaje__price" href=""
+                  >desde <br />
+                  <span class="viaje__price viaje__price--big">1.543€</span></a
+                >
+                <button class="viaje__button viaje__button--white">
+                  Más info
+                  <span class="material-symbols-outlined"> navigate_next </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="viaje__elem4">
+            <div class="viaje__img">
+              <img src="riviera_maya.jpg" alt="riviera_maya" />
+            </div>
+            <div class="viaje__info">
+              <div class="viaje__info-sub-container">
+                <a class="viaje__place" href=""
+                  ><h3>Disfruta en Riviera Maya</h3></a
+                >
+                <p class="viaje__description">
+                  Riviera Maya se sitúa en el caribe mexicano, un lugar ideal
+                  para sus vacaciones, gracias a su temperatura tropical, sus
+                  aguas color turquesa y sus playas de arena blanca.
+                </p>
+              </div>
+              <div class="viaje__reservation">
+                <a class="viaje__price" href=""
+                  >desde <br />
+                  <span class="viaje__price viaje__price--big">1.543€</span></a
+                >
+                <button class="viaje__button viaje__button--white">
+                  Más info
+                  <span class="material-symbols-outlined"> navigate_next </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="viaje-container">
+        <h2 class="viaje-container__title">Ideas para el 2024</h2>
+        <div class="viaje">
+          <div class="viaje__elem1">
+            <div class="viaje__img">
+              <img src="china.jpg" alt="bellezas_de_china" />
+            </div>
+            <div class="viaje__info">
+              <div class="viaje__info-sub-container">
+                <a class="viaje__place" href=""><h3>Bellezas de China</h3></a>
+                <p class="viaje__description">
+                  Una cultura milenaria y paisajes de ensueño es lo que
+                  encontrarás en China en un viaje sorprendente y
+                  espectacularmente único. Además, ¡ya no es necesario el visado
+                  para entrar!
+                </p>
+              </div>
+              <div class="viaje__reservation">
+                <a class="viaje__price" href=""
+                  >desde <br />
+                  <span class="viaje__price viaje__price--big">1.955€</span></a
+                >
+                <button class="viaje__button viaje__button--white">
+                  Más info
+                  <span class="material-symbols-outlined"> navigate_next </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="viaje__elem2">
+            <div class="viaje__img">
+              <img src="riviera_maya.jpg" alt="riviera_maya" />
+            </div>
+            <div class="viaje__info">
+              <div class="viaje__info-sub-container">
+                <a class="viaje__place" href=""
+                  ><h3>Disfruta en Riviera Maya</h3></a
+                >
+                <p class="viaje__description">
+                  Riviera Maya se sitúa en el caribe mexicano, un lugar ideal
+                  para sus vacaciones, gracias a su temperatura tropical, sus
+                  aguas color turquesa y sus playas de arena blanca.
+                </p>
+              </div>
+              <div class="viaje__reservation">
+                <a class="viaje__price" href=""
+                  >desde <br />
+                  <span class="viaje__price viaje__price--big">1.543€</span></a
+                >
+                <button class="viaje__button viaje__button--white">
+                  Más info
+                  <span class="material-symbols-outlined"> navigate_next </span>
                 </button>
               </div>
             </div>
@@ -75,14 +257,21 @@
         <h2 class="viaje-container__title">Celebra San Valentín</h2>
         <div class="viaje">
           <div class="viaje__elem1">
-            <img class="viaje__img" src="paris.jpg" alt="paris_ciudad_amor" />
+            <div class="viaje__img">
+              <img src="paris.jpg" alt="paris_ciudad_amor" />
+            </div>
             <div class="viaje__info">
-              <a class="viaje__place" href=""><h3>París la ciudad del amor</h3></a>
-              <p class="viaje__description">
-                Es una de las ciudades más emblemáticas del mundo y es
-                considerada una de las ciudades más hermosas y románticas, tanto
-                es así que se la ha denominado la ciudad del amor en Europa.
-              </p>
+              <div class="viaje__info-sub-container">
+                <a class="viaje__place" href=""
+                  ><h3>París la ciudad del amor</h3></a
+                >
+                <p class="viaje__description">
+                  Es una de las ciudades más emblemáticas del mundo y es
+                  considerada una de las ciudades más hermosas y románticas,
+                  tanto es así que se la ha denominado la ciudad del amor en
+                  Europa.
+                </p>
+              </div>
               <div class="viaje__reservation">
                 <a class="viaje__price" href=""
                   >desde <br />
@@ -90,23 +279,24 @@
                 >
                 <button class="viaje__button viaje__button--green">
                   Reserva ya
+                  <span class="material-symbols-outlined"> navigate_next </span>
                 </button>
               </div>
             </div>
           </div>
           <div class="viaje__elem2">
-            <img
-              class="viaje__img"
-              src="lanzarote.jpg"
-              alt="lanzarote_pareja"
-            />
+            <div class="viaje__img">
+              <img src="lanzarote.jpg" alt="lanzarote_pareja" />
+            </div>
             <div class="viaje__info">
-              <a class="viaje__place" href=""><h3>Lanzarote en pareja</h3></a>
-              <p class="viaje__description">
-                Escápate a disfrutar a la isla más oriental de las Canarias. A
-                pesar de la naturaleza volcánica de la isla, Lanzarote tiene
-                varias playas blancas hermosas que no te puedes perder.
-              </p>
+              <div class="viaje__info-sub-container">
+                <a class="viaje__place" href=""><h3>Lanzarote en pareja</h3></a>
+                <p class="viaje__description">
+                  Escápate a disfrutar a la isla más oriental de las Canarias. A
+                  pesar de la naturaleza volcánica de la isla, Lanzarote tiene
+                  varias playas blancas hermosas que no te puedes perder.
+                </p>
+              </div>
               <div class="viaje__reservation">
                 <a class="viaje__price" href=""
                   >desde <br />
@@ -114,6 +304,7 @@
                 >
                 <button class="viaje__button viaje__button--green">
                   Reserva ya
+                  <span class="material-symbols-outlined"> navigate_next </span>
                 </button>
               </div>
             </div>
@@ -124,12 +315,23 @@
         <h2 class="viaje-container__title">Destinos Top</h2>
         <div class="viaje">
           <div class="viaje__elem1">
-            <img class="viaje__img" src="roma_pisa_florencia.jpg" alt="roma_pisa_florencia" />
+            <div class="viaje__img">
+              <img
+              src="roma_pisa_florencia.jpg"
+              alt="roma_pisa_florencia"
+              />
+            </div>
             <div class="viaje__info">
-              <a class="viaje__place" href=""><h3>Roma, Pisa y Florencia</h3></a>
-              <p class="viaje__description">
-                Descubre la bella Italia y su magnífica gastronomía. Encuentra los rincones secretos de Roma, conoce la famosa Torre de Pisa y la majestuosa ciudad de Florencia.
-              </p>
+              <div class="viaje__info-sub-container">
+                <a class="viaje__place" href=""
+                  ><h3>Roma, Pisa y Florencia</h3></a
+                >
+                <p class="viaje__description">
+                  Descubre la bella Italia y su magnífica gastronomía. Encuentra
+                  los rincones secretos de Roma, conoce la famosa Torre de Pisa
+                  y la majestuosa ciudad de Florencia.
+                </p>
+              </div>
               <div class="viaje__reservation">
                 <a class="viaje__price" href=""
                   >desde <br />
@@ -137,21 +339,24 @@
                 >
                 <button class="viaje__button viaje__button--green">
                   Reserva ya
+                  <span class="material-symbols-outlined"> navigate_next </span>
                 </button>
               </div>
             </div>
           </div>
           <div class="viaje__elem2">
-            <img
-              class="viaje__img"
-              src="nilo.jpg"
-              alt="leyendas_nilo"
-            />
+            <div class="viaje__img">
+              <img src="nilo.jpg" alt="leyendas_nilo" />
+            </div>
             <div class="viaje__info">
-              <a class="viaje__place" href=""><h3>Leyendas del Nilo</h3></a>
-              <p class="viaje__description">
-                Viaja a la historia y la cultura de Egipto, disfrutando de un crucero por el Nilo en Pensión Completa, y de la asombrosa ciudad de El Cairo.
-              </p>
+              <div class="viaje__info-sub-container">
+                <a class="viaje__place" href=""><h3>Leyendas del Nilo</h3></a>
+                <p class="viaje__description">
+                  Viaja a la historia y la cultura de Egipto, disfrutando de un
+                  crucero por el Nilo en Pensión Completa, y de la asombrosa
+                  ciudad de El Cairo.
+                </p>
+              </div>
               <div class="viaje__reservation">
                 <a class="viaje__price" href=""
                   >desde <br />
@@ -159,6 +364,7 @@
                 >
                 <button class="viaje__button viaje__button--white">
                   Más info
+                  <span class="material-symbols-outlined"> navigate_next </span>
                 </button>
               </div>
             </div>
@@ -169,12 +375,20 @@
         <h2 class="viaje-container__title">Novedad</h2>
         <div class="viaje">
           <div class="viaje__elem1 viaje__elem1--lower-width">
-            <img class="viaje__img" src="costa_rica.jpg" alt="costa_rica" />
+            <div class="viaje__img">
+              <img src="costa_rica.jpg" alt="costa_rica" />
+            </div>
             <div class="viaje__info">
-              <a class="viaje__place" href=""><h3>Costa Rica Parques Nacionales</h3></a>
-              <p class="viaje__description">
-                Conoce la auténtica Costa Rica y adéntrate en una de las naturalezas más exóticas del mundo visitando sus Parques Nacionales.
-              </p>
+              <div class="viaje__info-sub-container">
+                <a class="viaje__place" href=""
+                  ><h3>Costa Rica Parques Nacionales</h3></a
+                >
+                <p class="viaje__description">
+                  Conoce la auténtica Costa Rica y adéntrate en una de las
+                  naturalezas más exóticas del mundo visitando sus Parques
+                  Nacionales.
+                </p>
+              </div>
               <div class="viaje__reservation">
                 <a class="viaje__price" href=""
                   >desde <br />
@@ -182,6 +396,7 @@
                 >
                 <button class="viaje__button viaje__button--white">
                   Más info
+                  <span class="material-symbols-outlined"> navigate_next </span>
                 </button>
               </div>
             </div>
@@ -192,12 +407,23 @@
         <h2 class="viaje-container__title">Disfruta</h2>
         <div class="viaje">
           <div class="viaje__elem1 viaje__elem1--lower-width">
-            <img class="viaje__img" src="hoteles_full.jpg" alt="hoteles_todo_incluido" />
+            <div class="viaje__img">
+              <img
+              src="hoteles_full.jpg"
+              alt="hoteles_todo_incluido"
+              />
+            </div>
             <div class="viaje__info">
-              <a class="viaje__place" href=""><h3>Hoteles en Todo Incluido</h3></a>
-              <p class="viaje__description">
-                ¿Todavía no conoces todas las ventajas de estar en un hotel en régimen de Todo Incluido? No dejes pasar esta oportunidad, ven a comprobarlo y disfruta de todos los servicios incluidos.
-              </p>
+              <div class="viaje__info-sub-container">
+                <a class="viaje__place" href=""
+                  ><h3>Hoteles en Todo Incluido</h3></a
+                >
+                <p class="viaje__description">
+                  ¿Todavía no conoces todas las ventajas de estar en un hotel en
+                  régimen de Todo Incluido? No dejes pasar esta oportunidad, ven
+                  a comprobarlo y disfruta de todos los servicios incluidos.
+                </p>
+              </div>
               <div class="viaje__reservation">
                 <a class="viaje__price" href=""
                   >desde <br />
@@ -205,6 +431,7 @@
                 >
                 <button class="viaje__button viaje__button--white">
                   Más info
+                  <span class="material-symbols-outlined"> navigate_next </span>
                 </button>
               </div>
             </div>
@@ -215,12 +442,18 @@
         <h2 class="viaje-container__title">Conocemos tu próximo destino</h2>
         <div class="viaje viaje--gap-modified">
           <div class="viaje__elem1">
-            <img class="viaje__img" src="new_york.jpg" alt="new_york" />
+            <div class="viaje__img">
+              <img src="new_york.jpg" alt="new_york" />
+            </div>
             <div class="viaje__info">
-              <a class="viaje__place" href=""><h3>New York, New York</h3></a>
-              <p class="viaje__description">
-                ¿Ganas de conocer Nueva York? Recorre el corazón de Manhattan y convierte sus espectaculares paisajes en los protagonistas de tus fotografías. ¡Vive un viaje inolvidable!
-              </p>
+              <div class="viaje__info-sub-container">
+                <a class="viaje__place" href=""><h3>New York, New York</h3></a>
+                <p class="viaje__description">
+                  ¿Ganas de conocer Nueva York? Recorre el corazón de Manhattan
+                  y convierte sus espectaculares paisajes en los protagonistas
+                  de tus fotografías. ¡Vive un viaje inolvidable!
+                </p>
+              </div>
               <div class="viaje__reservation">
                 <a class="viaje__price" href=""
                   >desde <br />
@@ -228,21 +461,26 @@
                 >
                 <button class="viaje__button viaje__button--green">
                   Reserva ya
+                  <span class="material-symbols-outlined"> navigate_next </span>
                 </button>
               </div>
             </div>
           </div>
           <div class="viaje__elem2">
-            <img
-              class="viaje__img"
-              src="galicia.jpg"
-              alt="galicia"
-            />
+            <div class="viaje__img">
+              <img src="galicia.jpg" alt="galicia" />
+            </div>
             <div class="viaje__info">
-              <a class="viaje__place" href=""><h3>Circuito por Galicia</h3></a>
-              <p class="viaje__description">
-                Anímate a descubrir Galicia y sus Rías Baixas en un completo circuito. Visita Baiona, Cambados, Santiago de Compostela, A Coruña, Pontevedra, Combarro, O Grove y A Toxa.
-              </p>
+              <div class="viaje__info-sub-container">
+                <a class="viaje__place" href=""
+                  ><h3>Circuito por Galicia</h3></a
+                >
+                <p class="viaje__description">
+                  Anímate a descubrir Galicia y sus Rías Baixas en un completo
+                  circuito. Visita Baiona, Cambados, Santiago de Compostela, A
+                  Coruña, Pontevedra, Combarro, O Grove y A Toxa.
+                </p>
+              </div>
               <div class="viaje__reservation">
                 <a class="viaje__price" href=""
                   >desde <br />
@@ -250,21 +488,24 @@
                 >
                 <button class="viaje__button viaje__button--white">
                   Más info
+                  <span class="material-symbols-outlined"> navigate_next </span>
                 </button>
               </div>
             </div>
           </div>
           <div class="viaje__elem3">
-            <img
-              class="viaje__img"
-              src="laponia.jpg"
-              alt="laponia"
-            />
+            <div class="viaje__img">
+              <img src="laponia.jpg" alt="laponia" />
+            </div>
             <div class="viaje__info">
-              <a class="viaje__place" href=""><h3>Ven a Laponia</h3></a>
-              <p class="viaje__description">
-                Conocer paisajes de ensueño, practicar deportes de invierno, vivir grandes aventuras en la tierra de la Navidad, ¡y hasta conocer en persona a Papá Noel!
-              </p>
+              <div class="viaje__info-sub-container">
+                <a class="viaje__place" href=""><h3>Ven a Laponia</h3></a>
+                <p class="viaje__description">
+                  Conocer paisajes de ensueño, practicar deportes de invierno,
+                  vivir grandes aventuras en la tierra de la Navidad, ¡y hasta
+                  conocer en persona a Papá Noel!
+                </p>
+              </div>
               <div class="viaje__reservation">
                 <a class="viaje__price" href=""
                   >desde <br />
@@ -272,21 +513,24 @@
                 >
                 <button class="viaje__button viaje__button--white">
                   Más info
+                  <span class="material-symbols-outlined"> navigate_next </span>
                 </button>
               </div>
             </div>
           </div>
           <div class="viaje__elem4">
-            <img
-              class="viaje__img"
-              src="japon.jpg"
-              alt="japon"
-            />
+            <div class="viaje__img">
+              <img src="japon.jpg" alt="japon" />
+            </div>
             <div class="viaje__info">
-              <a class="viaje__place" href=""><h3>Japón clásico</h3></a>
-              <p class="viaje__description">
-                Descubre Japón, país del sol naciente. Disfuta de su amplia red de transportes para conocer sus grandes ciudades como Nara, Hakone, Kyoto y Tokio.
-              </p>
+              <div class="viaje__info-sub-container">
+                <a class="viaje__place" href=""><h3>Japón clásico</h3></a>
+                <p class="viaje__description">
+                  Descubre Japón, país del sol naciente. Disfuta de su amplia
+                  red de transportes para conocer sus grandes ciudades como
+                  Nara, Hakone, Kyoto y Tokio.
+                </p>
+              </div>
               <div class="viaje__reservation">
                 <a class="viaje__price" href=""
                   >desde <br />
@@ -294,12 +538,144 @@
                 >
                 <button class="viaje__button viaje__button--white">
                   Más info
+                  <span class="material-symbols-outlined"> navigate_next </span>
                 </button>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="travel-offers">
+        <h4>Ofertas de viajes</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in ligula egestas dui auctor tempus ut vel purus. Nullam et pellentesque massa, sed egestas nunc. Integer quis rhoncus ipsum. Curabitur dignissim orci et libero blandit luctus.</p>
+        
+        <p>Nulla auctor hendrerit vulputate. Aenean eget vehicula purus. Aliquam sit amet elementum ante, aliquam tempus massa. Mauris lorem tellus, scelerisque non rhoncus ut, elementum non dolor. In quis ante sed sem posuere venenatis. Quisque molestie felis eget justo varius, nec scelerisque ligula luctus. </p> 
+        
+        <p>Pellentesque venenatis, nunc at accumsan sodales, mi dui viverra nunc, nec fringilla neque nunc in risus. Sed vulputate sagittis lacus, ut</p>
+
+      </div>
+      <div class="filters-bottom">
+        <ul>
+          <li><a href=""><span class="material-symbols-outlined">flight</span>Vuelos baratos</a></li>
+          <li><a href=""><span class="material-symbols-outlined">
+            flights_and_hotels
+            </span>Vuelo+Hotel</a></li>
+          <li><a href=""><span class="material-symbols-outlined">
+            map
+            </span>Circuitos</a></li>
+          <li><a href=""><span class="material-symbols-outlined">
+            elderly
+            </span>Jóvenes +60</a></li>
+          <li><a href=""><span class="material-symbols-outlined">
+            groups
+            </span>Grupos</a></li>
+            <li><a href=""><span class="material-symbols-outlined">
+              local_activity
+              </span>Entradas</a></li>
+          <li><a href=""><span class="material-symbols-outlined">
+            luggage
+            </span>Ofertas Última Hora</a></li>
+          <li><a href=""><span class="material-symbols-outlined">
+            beach_access
+            </span>Caribe</a></li>
+        </ul>
+
+      </div>
+      
+      <div class="menu-bottom">
+        <div class="menu-bottom__elem1">
+          <h4>Sobre nosotros</h4>
+          <ul>
+            <li><a href="">Quiénes somos</a></li>
+            <li><a href="">Tarjeta El Corte Inglés</a></li>
+            <li><a href="">Trabaja con nosotros</a></li>
+            <li><a href="">El Corte Inglés</a></li>
+            <li><a href="">Afiliados</a></li>
+          </ul>
+        </div>
+        <div class="menu-bottom__elem2">
+          <h4>Planea tu viaje</h4>
+          <ul>
+            <li><a href="">Blog de viajes</a></li>
+            <li><a href="">Guías de viaje</a></li>
+            <li><a href="">Vente de maratón</a></li>
+            <li><a href="">Eventos</a></li>
+            <li><a href="">Catálogos</a></li>
+            <li><a href="">Grupos</a></li>
+          </ul>
+        </div>
+        <div class="menu-bottom__elem3">
+          <h4>Información importante</h4>
+          <ul>
+            <li><a href="">Condiciones Generales</a></li>
+            <li><a href="">Política de privacidad</a></li>
+            <li><a href="">Preguntas frecuentes</a></li>
+            <li><a href="">Viajar a EE.UU</a></li>
+            <li><a href="">Auto check-in</a></li>
+            <li><a href="">Política de cookies</a></li>
+            <li><a href="">Atención al cliente</a></li>
+          </ul>
+        </div>
+        <div class="menu-bottom__elem4 menu-bottom__elem4--modified">
+          <h4>Internacional</h4>
+          <ul class="menu-bottom__countries">
+            <li><a href="">Portugal</a></li>
+            <li><a href="">Italia</a></li>
+            <li><a href="">Francia</a></li>
+            <li><a href="">Colombia</a></li>
+            <li><a href="">Chile</a></li>
+            <li><a href="">Argentina</a></li>
+            <li><a href="">Perú</a></li>
+            <li><a href="">México</a></li>
+            <li><a href="">Panamá</a></li>
+            <li><a href="">Ecuador</a></li>
+            <li><a href="">R. Dominicana</a></li>
+            <li><a href="">Uruguay</a></li>
+          </ul>
+        </div>
+
+      </div>
     </div>
+    <footer class="footer">
+      <div class="footer__top">
+        
+          <div>
+          <span class="material-symbols-outlined">
+            credit_card
+            </span>
+          <p class="footer__top footer__top--uppercase">Facilidades de pago</p>
+        </div>
+
+        <div>
+          <span class="material-symbols-outlined">
+            hotel_class
+            </span>
+            <p>Con la calidad de <br> <span class="el-corte-ingles">Viajes El Corte Inglés</span></p>
+        </div>
+        
+        <div class="footer__top--column">
+          <p>Ahora con las opiniones de:</p>
+          <img class="footer__tripadvisor" src="tripadvisor_logo.svg" alt="tripadvisor">
+        </div>
+
+      </div>
+      <div class="footer__bottom">
+      <div class="footer__logo">
+      <img src="corteinglesofertas_logo.png" alt="corteingles_ofertas_logo">
+      <p>© Viajes El Corte Inglés 2023. Todos los derechos reservados</p>
+    </div>
+    <div class="footer__social-network">
+      <h4>Síguenos en:</h4>
+      <div class="footer__icons">
+        <a href="#" class="fa fa-pinterest"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-youtube"></a>
+      </div>
+    </div>
+  </div>
+
+    </footer>
   </body>
 </html>

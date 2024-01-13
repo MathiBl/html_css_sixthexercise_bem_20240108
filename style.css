@@ -10,19 +10,32 @@ body {
 /* HEADER */
 
 .header {
-    /* display: flex; */
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header__menu {
-    /* display: flex; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     gap: 1%;
+    min-width: 50%;
+    flex-wrap: wrap;
+    /* max-height: 19px; */
 }
 
 .header__menu a {
     text-decoration: none;
     color: gray;
+    display: flex;
+    align-items: center;
+}
+
+.header__menu a:hover {
+    color: #67B500;
+    cursor: pointer;
 }
 
 .header__menu a:not(:last-child) {
@@ -31,6 +44,102 @@ body {
 }
 
 /* MAIN CONTAINER */
+
+.navbar {
+    min-width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: fit-content;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.navbar--border-top {
+    border-top: 1px solid gray;
+}
+
+.navbar li {
+    display: flex;
+    align-items: center;
+}
+
+.navbar li:hover:not(:first-child) {
+    cursor: pointer;
+    border-bottom: 3px solid #67B500;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    color: #67B500;
+}
+
+.navbar__elem1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar__elem1--green {
+    color: white;
+    background-color: #67B500;
+    padding: 7px;
+}
+
+/* .navbar__item-selected ul {
+    display: flex;
+    flex-direction: row;
+} */
+
+.navbar__item-selected--without-space {
+    display: flex;
+    justify-content: left;
+}
+
+.navbar__item-selected--green {
+    color: #67B500;
+}
+
+.navbar__item-selected--gray {
+    color: gray;
+}
+
+.navbar-filters {
+    min-width: 100%;
+}
+
+.navbar-filters ul {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: fit-content;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 2%;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-filters li {
+    background-color: #67B500;
+    display: flex;
+    padding: 7px 12px 7px 12px;
+}
+
+.navbar-filters a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
 
 .main-container {
     display: flex;
@@ -59,23 +168,42 @@ body {
     color: gray;
 }
 
+/* .viaje-container__title--center {
+    display: flex;
+    justify-content: center;
+} */
+
 .viaje {
     display: flex;
     flex-direction: row;
     gap: 4%;
 }
 
-.viaje__img {
+.viaje__img img {
     width: 100%;
     height: 40%;
 }
+
+/* .viaje__img:hover {
+    transform: scale(1.5);
+    transition: 0.3s;
+    height: 40%;
+
+}
+
+.XXX:hover {
+    overflow: hidden;
+
+} */
 
 .viaje__elem1,
 .viaje__elem2,
 .viaje__elem3,
 .viaje__elem4 {
-    border: 1px solid gray;
-    height: 430px;
+    border: 1px solid lightgray;
+    height: fit-content;
+    min-height: 450px;
+    /* padding: 10px 5px; */
     width: 49%;
 }
 
@@ -85,12 +213,25 @@ body {
 
 .viaje__info {
     padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 290px;
+}
+
+.viaje__info-sub-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .viaje__place {
     text-decoration: none;
     color: gray;
     font-weight: normal;
+}
+
+.viaje__description {
+    margin: 0;
 }
 
 .viaje__place:hover {
@@ -120,12 +261,39 @@ body {
     color: #67B500;
 }
 
+.viaje__price--modified {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: black;
+}
+
+.material-symbols-outlined--hover {
+    color: green;
+}
+
+.material-symbols-outlined--hover:hover{
+    cursor: pointer;
+    color: #67B500;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.viaje__price--black {
+    color: black;
+    font-size: x-large;
+}
+
 .viaje__button--white {
     text-transform: uppercase;
     color: #5DA132;
-    border: none;
+    border: 1px solid #67B500;
     border-radius: 5%;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 
 .viaje__button--white:hover {
@@ -144,6 +312,10 @@ body {
     border: none;
     border-radius: 5%;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 
 .viaje__button--green:hover {
@@ -155,6 +327,19 @@ body {
     font-weight: bold;
 }
 
+.viaje__button--info {
+    display: flex;
+    /* width: 50%; */
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid black;
+    /* top: 0; */
+}
+
 .viaje-container--higher-width {
     display: flex;
     flex-direction: column;
@@ -164,6 +349,205 @@ body {
 .viaje--gap-modified {
     gap: 2%;
 }
+
+.travel-offers {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.travel-offers h4 {
+    color: gray;
+}
+
+.filters-bottom {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.filters-bottom ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.filters-bottom li {
+    display: flex;
+    justify-content: center;
+    min-height: 60px;
+}
+
+.filters-bottom a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    font-size: small;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filters-bottom span {
+    font-size: xx-large;
+    color: #67B500;
+}
+
+.menu-bottom {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 50px;
+    /* justify-content:space-between; */
+}
+
+.menu-bottom__elem1,
+.menu-bottom__elem2,
+.menu-bottom__elem3,
+.menu-bottom__elem4 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+}
+
+.menu-bottom h4 {
+    color: #67B500;
+    font-size: small;
+}
+
+.menu-bottom h4::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: lightgray;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+
+.menu-bottom h4::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: lightgray;
+    margin-left: -70px;
+    margin-top: 8px;
+}
+
+.menu-bottom ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    line-height: 20px;
+    align-items: center;
+    width: 50%;
+    padding: 0;
+}
+
+.menu-bottom a {
+    text-decoration: none;
+    color: gray;
+    font-size: small;
+}
+
+.menu-bottom a:hover {
+    cursor: pointer;
+    color: #67B500;
+}
+
+.menu-bottom__elem4--modified ul {    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    gap: 20%;
+    width: 60%;
+    justify-content: center;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__top div {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__top p {
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__top--uppercase {
+    text-transform: uppercase;
+}
+
+.el-corte-ingles {
+    text-transform: uppercase;
+}
+
+.footer__top--column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__tripadvisor {
+    width: 20%;
+}
+
+.footer__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__logo p {
+    color: gray;
+    font-size: small;
+}
+
+.footer__social-network h4 {
+    color: gray;
+    font-weight: normal;
+}
+
+.footer__icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.footer__icons a {
+    text-decoration: none;
+    color: #67B500;
+    font-size: xx-large;
+}
+
+.footer__icons a:hover {
+    cursor: pointer;
+    color: green;
+}
+
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 499px) {
     .main-container {
