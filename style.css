@@ -3,7 +3,7 @@
 }
 
 body {
-    width: 90%;
+    width: 85%;
     margin: 20px auto;
 }
 
@@ -95,11 +95,6 @@ body {
     padding: 7px;
 }
 
-/* .navbar__item-selected ul {
-    display: flex;
-    flex-direction: row;
-} */
-
 .navbar__item-selected--without-space {
     display: flex;
     justify-content: left;
@@ -115,6 +110,7 @@ body {
 
 .navbar-filters {
     min-width: 100%;
+    margin-bottom: 2%;
 }
 
 .navbar-filters ul {
@@ -153,6 +149,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 49%;
+    margin-bottom: 2%;
 }
 
 .viaje-container--lower-width {
@@ -168,10 +165,10 @@ body {
     color: gray;
 }
 
-/* .viaje-container__title--center {
+.viaje-container__title--center {
     display: flex;
     justify-content: center;
-} */
+}
 
 .viaje {
     display: flex;
@@ -184,17 +181,21 @@ body {
     height: 40%;
 }
 
-/* .viaje__img:hover {
-    transform: scale(1.5);
-    transition: 0.3s;
-    height: 40%;
-
+.viaje__img--relative {
+    display: flex;
+    position: relative;
+    min-height: 70%;
 }
 
-.XXX:hover {
-    overflow: hidden;
+.viaje__img--relative img:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+    height: 40%;
+}
 
-} */
+.viaje__img--relative:hover {
+    overflow: hidden;
+}
 
 .viaje__elem1,
 .viaje__elem2,
@@ -203,6 +204,17 @@ body {
     border: 1px solid lightgray;
     height: fit-content;
     min-height: 450px;
+    /* padding: 10px 5px; */
+    width: 49%;
+}
+
+.viaje__elem1--smaller,
+.viaje__elem2--smaller,
+.viaje__elem3--smaller,
+.viaje__elem4--smaller {
+    border: 1px solid lightgray;
+    height: fit-content;
+    min-height: 200px;
     /* padding: 10px 5px; */
     width: 49%;
 }
@@ -222,6 +234,10 @@ body {
 .viaje__info-sub-container {
     display: flex;
     flex-direction: column;
+}
+
+.viaje__destination {
+    padding: 3%;
 }
 
 .viaje__place {
@@ -266,6 +282,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     color: black;
+    margin-right: 7%;
 }
 
 .material-symbols-outlined--hover {
@@ -330,14 +347,16 @@ body {
 .viaje__button--info {
     display: flex;
     /* width: 50%; */
-    justify-content: space-between;
+    height: 20%;
+    /* justify-content: space-between; */
     align-items: center;
     border: 1px solid white;
     background-color: white;
     position: absolute;
-    z-index: 1;
-    border: 1px solid black;
-    /* top: 0; */
+    border: 1px solid white;
+    border-radius: 5px 0px 0px 0px;
+    bottom: 5%;
+    right: 0;
 }
 
 .viaje-container--higher-width {
@@ -398,7 +417,7 @@ body {
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 5%;
     /* justify-content:space-between; */
 }
 
@@ -474,7 +493,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 50px;
+    margin-top:2%;
 }
 
 .footer__top {
@@ -496,7 +515,6 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
 .footer__top--uppercase {
     text-transform: uppercase;
 }
@@ -511,13 +529,14 @@ body {
 }
 
 .footer__tripadvisor {
-    width: 20%;
+    width: 30%;
 }
 
 .footer__bottom {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    width: 100%;
+    gap: 50%;
 }
 
 .footer__logo p {
